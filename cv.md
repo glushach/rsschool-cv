@@ -1,7 +1,7 @@
 # Oleksand Hlushach 
 ![My photo](https://media-exp1.licdn.com/dms/image/C4E03AQETk2funEMcjg/profile-displayphoto-shrink_800_800/0/1594192177176?e=1645056000&v=beta&t=VW-V0n4XM6ctgpcabjyLKT4eFtFgIC7BJdjH8OsyIYM)
 
-##Angular developer
+## Angular developer
 **Development is not just a job for me. Development is analysis,
 creativity and simplicity**
 

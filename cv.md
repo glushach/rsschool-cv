@@ -60,15 +60,4 @@ Angular 2+, JavaScript / ES6+, Communication, Empathy, Focus, Angular Material, 
 
 **Soft skills:**
 
-Responsibility, Stress resistance, Ionic|Non-conflict, Teamplayer
-
-**Example of my code:**
-``````
-function getEvenNumbers(numbersArray){ 
-  // filter out the odd numbers
-  return numbersArray.filter(i => {
-    if ((i % 2) === 0) {
-      return i;
-    }
-  })
-}
+Responsibility, Stress resistance, Non-conflict, Teamplayer

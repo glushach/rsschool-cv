@@ -10,16 +10,16 @@
 * Email: shoppingplaneta@gmail.com       
 * Telegram: @hlushach                    
 * Discord: Oleksandr Hlushach (@glushach)
----
 
+---
 **About me:**
 
 Hi, I'm Oleksandr! I am a positive, 
 friendly, creative and open-minded person.
 I love to learn something new and interesting.
 In future work, I want to improve my professional skills,  and teamwork skill.
----
 
+---
 **Work experience:**
 
 I work in IT company from February 2021. I have done two commercial projects:      
@@ -31,6 +31,7 @@ I work in IT company from February 2021. I have done two commercial projects:
    * [Universal College](https://glushach.github.io/test-roulette.io/app/)
    * [Global Opt](https://glushach.github.io/glopt.io/dist/)
    * [Prengi](https://glushach.github.io/FMC_4.io/dist/)
+
 ---
 **Used technologies:**
 

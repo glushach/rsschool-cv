@@ -6,7 +6,7 @@
 creativity and simplicity**
 
 
-*| *
+-| -
 --- | ---
 **Contacts:**| **About me:**
 Phone: +380 (95) 108-75-67             | Hi, I'm Oleksandr! I am a positive, 

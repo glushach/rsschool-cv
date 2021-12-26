@@ -28,26 +28,25 @@ figure {
 figure img {
     border-radius: 50%;
 }
-h3 {
+h3, h2 {
     text-transform: uppercase;
     font-size: 25px;
     margin-bottom: 10px;
 }
 h2 {
-    text-transform: uppercase;
     font-size: 23px;
 }
-article > hr {
+hr {
     margin-bottom: 30px;
 }
-.contacts li {
+.contacts li, .skills li {
     font-size: 16px;
     list-style: none; /* Убираем исходные маркеры */
     padding-left: 24px; /* Смещаем текст вправо */
     margin-bottom: 4px;
     position: relative;
 }
-li::before {
+li::before {     /* all li on page */
     content: '';
     display: inline-block;
     width: 18px;
@@ -57,6 +56,8 @@ li::before {
     left: 0;
     border-radius: 50%;
 }
+
+/* contacts */
 li.phone::before {
     background: url(icon/contacts/phone.png) no-repeat;
     background-size: contain;
@@ -73,3 +74,56 @@ li.discord::before {
     background: url(icon/contacts/discord.svg) no-repeat;
     background-size: contain;
 }
+/* skills */
+li.angular::before {
+    background: url(icon/skills/angular.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.javascript::before {
+    background: url(icon/skills/javascript.svg) no-repeat;
+    background-size: contain;
+}
+
+li.angular-material::before {
+    background: url(icon/skills/material.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.typescript::before {
+    background: url(icon/skills/ts.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.rxjs::before {
+    background: url(icon/skills/rxjs.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.ionic::before {
+    background: url(icon/skills/ionic.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.html::before {
+    background: url(icon/skills/html.svg) no-repeat;
+    background-size: contain;
+}
+li.css::before {
+    background: url(icon/skills/css.svg) no-repeat;
+    background-size: contain;
+}
+li.sass::before {
+    background: url(icon/skills/sass.svg) no-repeat;
+    background-size: contain;
+}
+li.bootstrap::before {
+    background: url(icon/skills/bootstrap.svg) no-repeat;
+    background-size: contain;
+}
+li.git::before {
+    background: url(icon/skills/git.png) no-repeat;
+    background-size: contain;
+}
+li.npm::before {
+    background: url(icon/skills/npm.png) no-repeat;
+    background-size: contain;
+}
+
+
+

@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <aside class="sidebar">
-            <figure class="avatar"><img src="img/1594192177176.jpg" alt=""></figure>
+            <figure class="avatar"><img src="img/1594192177176.jpg" alt="avatar"></figure>
             <article class="contacts">
                 <h3 class="contacts-title">Contact</h3>
                 <ul>
@@ -52,10 +52,10 @@
             <article class="portfolio">
                 <h3 class="skills-title">Portfolio</h3>
                 <ul>
-                    <li class="todo-list"><a href="https://glushach.github.io/todo-list/" target="_blank">TODO LIST</a></li>
-                    <li class="ten-x"><a href="https://glushach.github.io/creativeproject/app/" target="_blank">TEN-X</a></li>
-                    <li class="college"><a href="https://glushach.github.io/test-roulette.io/app/" target="_blank">Universal College</a></li>
-                    <li class="global-opt"><a href="https://glushach.github.io/glopt.io/dist/" target="_blank">Global Opt</a></li>
+                    <li class="todo-list"><a href="https://glushach.github.io/todo-list/" target="_blank">Todo list</a></li>
+                    <li class="ten-x"><a href="https://glushach.github.io/creativeproject/app/" target="_blank">Ten-x</a></li>
+                    <li class="college"><a href="https://glushach.github.io/test-roulette.io/app/" target="_blank">Universal college</a></li>
+                    <li class="global-opt"><a href="https://glushach.github.io/glopt.io/dist/" target="_blank">Global opt</a></li>
                     <li class="prengi"><a href="https://glushach.github.io/FMC_4.io/dist/" target="_blank">Prengi</a></li>
                 </ul>
                 <hr> <!-- it is divider -->
@@ -64,20 +64,29 @@
         </aside> <!-- end left sidebar -->
 
         <main>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#me">About me</a></li>
+                    <li><a href="#experience">Work experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#lang">Languages</a></li>
+                    <li><a href="#code-example">Code example</a></li>
+                </ul>
+            </nav>
             <header>
                 <h1>Oleksand Hlushach</h1>
-                <div>Junior Angular developer</div>
+                <div class="position">Junior Angular developer</div>
                 <hr> <!-- it is divider -->
             </header>
             <section>
-                <h2 class="about-me">About me:</h2>
+                <h2 class="about-me" id="me">About me</h2>
                 <div>
                     Hi, I’m Oleksandr! I am a positive, friendly, creative and open-minded person. I love to learn something new and interesting. In future work, I want to improve my professional skills, and teamwork skill.
                 </div>
                 <hr> <!-- it is divider -->
             </section>
             <section>
-                <h2>Work experience:</h2>
+                <h2 id="experience">Work experience</h2>
                 <div class="experience-block">
                     <div class="experience">
                         <div class="experience-list">
@@ -95,8 +104,8 @@
                             <br>
                             <b>Tools:</b> Photoshop, Figma, Webstorm, Git, GitHub, SASS/SCSS, Android Studio
                         </div>
-                        <hr> <!-- it is divider -->
                     </div> <!-- end card experience -->
+                    <hr> <!-- it is divider -->
 
                     <div class="experience">
                         <div class="experience-list">
@@ -114,8 +123,8 @@
                             <br>
                             <b>Tools:</b> Webstorm, Git, GitHub
                         </div>
-                        <hr> <!-- it is divider -->
                     </div> <!-- end card experience -->
+                    <hr> <!-- it is divider -->
 
                     <div class="experience">
                         <div class="experience-list">
@@ -133,8 +142,8 @@
                             <br>
                             <b>Tools:</b> Webstorm, Git, GitHub, MAMP server
                         </div>
-                        <hr> <!-- it is divider -->
                     </div> <!-- end card experience -->
+                    <hr> <!-- it is divider -->
 
                     <div class="experience">
                         <div class="experience-list">
@@ -152,14 +161,14 @@
                             <br>
                             <b>Tools:</b> Webstorm, Git, GitHub, MAMP server
                         </div>
-                        <hr> <!-- it is divider -->
                     </div> <!-- end card experience -->
+                    <hr> <!-- it is divider -->
                 </div>
             </section> <!-- end experience section -->
 
             <section>
-                <h2>Education:</h2>
-                <div>
+                <h2 id="education">Education</h2>
+                <div class="education-block">
                     <div class="education">
                         <div class="education-list">
                             <div class="date-block">
@@ -170,8 +179,8 @@
                         <div class="description">
                             <b>Degree:</b> Master of Applied Economics
                         </div>
-                        <hr> <!-- it is divider -->
                     </div> <!-- end card education -->
+                    <hr> <!-- it is divider -->
 
                     <div class="education">
                         <div class="education-list">
@@ -183,27 +192,27 @@
                         <div class="description">
                             <b>Degree:</b> Bachelor of Applied Economics
                         </div>
-                        <hr> <!-- it is divider -->
                     </div> <!-- end card education -->
+                    <hr> <!-- it is divider -->
                 </div>
             </section> <!--end -->
             <section>
-                <h2>Languages:</h2>
-                <ul>
-                    <li><b>Russian</b> advanced</li>
-                    <li><b>English</b>
-                        <ul>
-                            <li>Writing and reading - B1</li>
-                            <li>Speaking and listening - A2</li>
-                        </ul>
-                    </li>
-                </ul>
+                <h2 id="lang">Languages</h2>
+                    <ul class="languages">
+                        <li><b>Russian</b> Advanced</li>
+                        <li><b>English</b>
+                            <ul class="lang-skills">
+                                <li>Writing and reading - B1</li>
+                                <li>Speaking and listening - A2</li>
+                            </ul>
+                        </li>
+                    </ul>
                 <hr> <!-- it is divider -->
             </section>
             
 
             <section>
-                <h2>Code example:</h2>
+                <h2 id="code-example">Code example</h2>
                 <pre>
                     function getEvenNumbers(numbersArray){
                       // filter out the odd numbers
@@ -217,10 +226,11 @@
             </section>
             
         </main> <!-- end main part of page -->
-
-        <footer>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam doloremque explicabo id impedit laborum natus necessitatibus non nostrum odit optio porro quaerat quam quis repellendus sed sint, tenetur velit?`
-        </footer>
     </div>
+    <footer>
+        <div><a class="github" href="https://github.com/glushach" target="_blank"><img src="icon/github.svg" alt="github"></a></div>
+        <div><a class="rss" href="https://rs.school/js-stage0/" target="_blank"><img src="icon/rss.svg" alt="rss"></a></div>
+        <div>2022</div>
+    </footer>
 </body>
 </html>

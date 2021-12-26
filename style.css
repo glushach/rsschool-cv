@@ -11,11 +11,16 @@ a {
     text-decoration: none;
     color: #000000;
 }
-.container {
+a:hover {
+    color: blueviolet;
+}
+
+.container, footer {
     max-width: 960px;
     margin: 0 auto;
     border: black solid 1px;
     background: aliceblue;
+    display: flex;
 }
 .sidebar {
     padding: 15px;
@@ -24,6 +29,7 @@ a {
 }
 main {
     width: 75%;
+    padding: 15px;
 }
 figure {
     text-align: center;
@@ -50,6 +56,7 @@ hr {
     margin-bottom: 4px;
     position: relative;
 }
+
 li::before {     /* all li on page */
     content: '';
     display: inline-block;
@@ -169,4 +176,47 @@ li.global-opt::before {
 li.prengi::before {
     background: url(icon/portfolio/oclock.png) no-repeat center center;
     background-size: 100% 100%;
+}
+
+.position {
+    margin: 22px 0;
+}
+
+.experience-block, .education-block {
+    font-size: 14px;
+}
+.experience, .education {
+    display: flex;
+}
+.experience-list {
+    padding: 5px;
+    width: 35%;
+}
+.description {
+    padding: 5px;
+    width: 65%;
+}
+.languages {
+    margin-left: 20px;
+}
+.lang-skills {
+    margin-left: 40px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+footer > div {
+    display: flex;
+    align-items: center;
+}
+.github > img, .rss > img {
+    width: 44px;
+    height: 44px;
 }

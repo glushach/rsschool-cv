@@ -7,6 +7,10 @@ body {
     background: bisque;
     padding: 30px;
 }
+a {
+    text-decoration: none;
+    color: #000000;
+}
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -39,7 +43,7 @@ h2 {
 hr {
     margin-bottom: 30px;
 }
-.contacts li, .hard-skills li, .soft-skills li {
+.contacts li, .hard-skills li, .soft-skills li , .portfolio li {
     font-size: 16px;
     list-style: none; /* Убираем исходные маркеры */
     padding-left: 24px; /* Смещаем текст вправо */
@@ -142,5 +146,27 @@ li.creative::before {
     background: url(icon/hard-skills/creative.png) no-repeat center center;
     background-size: 100% 100%;
 }
-/* portfolio */
 
+
+
+/* portfolio */
+li.todo-list::before {
+    background: url(icon/portfolio/todo.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+li.ten-x::before {
+    background: url(icon/portfolio/ten-x.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+li.college::before {
+    background: url(icon/portfolio/college.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+li.global-opt::before {
+    background: url(icon/portfolio/opt.png) no-repeat center center;
+    background-size: cover;
+}
+li.prengi::before {
+    background: url(icon/portfolio/oclock.png) no-repeat center center;
+    background-size: 100% 100%;
+}

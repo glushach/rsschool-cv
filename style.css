@@ -3,7 +3,73 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.color {
-    color: blueviolet;
+body {
+    background: bisque;
+    padding: 30px;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    border: black solid 1px;
+    background: aliceblue;
+}
+.sidebar {
+    padding: 15px;
+    width: 35%;
+    background: burlywood;
+}
+main {
+    width: 75%;
+}
+figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+figure img {
+    border-radius: 50%;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 23px;
+}
+article > hr {
+    margin-bottom: 30px;
+}
+.contacts li {
+    font-size: 16px;
+    list-style: none; /* Убираем исходные маркеры */
+    padding-left: 24px; /* Смещаем текст вправо */
+    margin-bottom: 4px;
+    position: relative;
+}
+li::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+li.phone::before {
+    background: url(icon/contacts/phone.png) no-repeat;
+    background-size: contain;
+}
+li.email::before {
+    background: url(icon/contacts/email.png) no-repeat;
+    background-size: contain;
+}
+li.telegram::before {
+    background: url(icon/contacts/telegram.png) no-repeat;
+    background-size: contain;
+}
+li.discord::before {
+    background: url(icon/contacts/discord.svg) no-repeat;
+    background-size: contain;
 }

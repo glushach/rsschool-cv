@@ -39,7 +39,7 @@ h2 {
 hr {
     margin-bottom: 30px;
 }
-.contacts li, .skills li {
+.contacts li, .hard-skills li, .soft-skills li {
     font-size: 16px;
     list-style: none; /* Убираем исходные маркеры */
     padding-left: 24px; /* Смещаем текст вправо */
@@ -125,5 +125,22 @@ li.npm::before {
     background-size: contain;
 }
 
-
+/* hard skills */
+li.responsible::before {
+    background: url(icon/hard-skills/responsible.png) no-repeat center center;
+    background-size: 120% 120%;
+}
+li.stress-resistance::before {
+    background: url(icon/hard-skills/non-stress.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.non-conflict::before {
+    background: url(icon/hard-skills/non-conflict.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.creative::before {
+    background: url(icon/hard-skills/creative.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+/* portfolio */
 

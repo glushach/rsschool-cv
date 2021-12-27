@@ -3,7 +3,220 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.color {
+body {
+    background: bisque;
+    padding: 30px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
     color: blueviolet;
+}
+
+.container, footer {
+    max-width: 960px;
+    margin: 0 auto;
+    border: black solid 1px;
+    background: aliceblue;
+    display: flex;
+}
+.sidebar {
+    padding: 15px;
+    width: 35%;
+    background: burlywood;
+}
+main {
+    width: 75%;
+    padding: 15px;
+}
+figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+figure img {
+    border-radius: 50%;
+}
+h3, h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 23px;
+}
+hr {
+    margin-bottom: 30px;
+}
+.contacts li, .hard-skills li, .soft-skills li , .portfolio li {
+    font-size: 16px;
+    list-style: none; /* Убираем исходные маркеры */
+    padding-left: 24px; /* Смещаем текст вправо */
+    margin-bottom: 4px;
+    position: relative;
+}
+
+li::before {     /* all li on page */
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+/* contacts */
+li.phone::before {
+    background: url(icon/contacts/phone.png) no-repeat;
+    background-size: contain;
+}
+li.email::before {
+    background: url(icon/contacts/email.png) no-repeat;
+    background-size: contain;
+}
+li.telegram::before {
+    background: url(icon/contacts/telegram.png) no-repeat;
+    background-size: contain;
+}
+li.discord::before {
+    background: url(icon/contacts/discord.svg) no-repeat;
+    background-size: contain;
+}
+/* skills */
+li.angular::before {
+    background: url(icon/skills/angular.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.javascript::before {
+    background: url(icon/skills/javascript.svg) no-repeat;
+    background-size: contain;
+}
+
+li.angular-material::before {
+    background: url(icon/skills/material.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.typescript::before {
+    background: url(icon/skills/ts.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.rxjs::before {
+    background: url(icon/skills/rxjs.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.ionic::before {
+    background: url(icon/skills/ionic.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.html::before {
+    background: url(icon/skills/html.svg) no-repeat;
+    background-size: contain;
+}
+li.css::before {
+    background: url(icon/skills/css.svg) no-repeat;
+    background-size: contain;
+}
+li.sass::before {
+    background: url(icon/skills/sass.svg) no-repeat;
+    background-size: contain;
+}
+li.bootstrap::before {
+    background: url(icon/skills/bootstrap.svg) no-repeat;
+    background-size: contain;
+}
+li.git::before {
+    background: url(icon/skills/git.png) no-repeat;
+    background-size: contain;
+}
+li.npm::before {
+    background: url(icon/skills/npm.png) no-repeat;
+    background-size: contain;
+}
+
+/* hard skills */
+li.responsible::before {
+    background: url(icon/hard-skills/responsible.png) no-repeat center center;
+    background-size: 120% 120%;
+}
+li.stress-resistance::before {
+    background: url(icon/hard-skills/non-stress.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.non-conflict::before {
+    background: url(icon/hard-skills/non-conflict.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+li.creative::before {
+    background: url(icon/hard-skills/creative.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+
+/* portfolio */
+li.todo-list::before {
+    background: url(icon/portfolio/todo.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+li.ten-x::before {
+    background: url(icon/portfolio/ten-x.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+li.college::before {
+    background: url(icon/portfolio/college.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+li.global-opt::before {
+    background: url(icon/portfolio/opt.png) no-repeat center center;
+    background-size: cover;
+}
+li.prengi::before {
+    background: url(icon/portfolio/oclock.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.position {
+    margin: 22px 0;
+}
+
+.experience-block, .education-block {
+    font-size: 14px;
+}
+.experience, .education {
+    display: flex;
+}
+.experience-list {
+    padding: 5px;
+    width: 35%;
+}
+.description {
+    padding: 5px;
+    width: 65%;
+}
+.languages {
+    margin-left: 20px;
+}
+.lang-skills {
+    margin-left: 40px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+footer > div {
+    display: flex;
+    align-items: center;
+}
+.github > img, .rss > img {
+    width: 44px;
+    height: 44px;
 }
